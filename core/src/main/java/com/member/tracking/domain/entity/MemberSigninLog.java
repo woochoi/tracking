@@ -11,12 +11,6 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 
 
-/**
- * _id : 681d8ba32215c849b08407ea
- * _class : com.gmarket.member.tracking.domain.entity.MemberSigninLog
- *
- */
-
 @Data
 @Builder
 @ToString
