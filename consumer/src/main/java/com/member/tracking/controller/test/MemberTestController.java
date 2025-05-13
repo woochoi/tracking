@@ -1,17 +1,34 @@
 package com.member.tracking.controller.test;
 
 import com.member.tracking.domain.entity.Member;
+import com.member.tracking.domain.entity.MemberSigninLog;
 import com.member.tracking.service.MemberService;
+import com.member.tracking.service.MemberSigninLogService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 public class MemberTestController {
     private final MemberService service;
+
+    private final MemberSigninLogService memberSigninLogService;
+
+    @GetMapping("signin-log-list")
+    public void viewSigninLogs() {
+        List<MemberSigninLog> logs = memberSigninLogService.getSigninLogs();
+
+        logs.stream()
+                .forEach(log1 -> log.info(String.valueOf(log1)));
+
+
+
+    }
+
 
     @PostMapping
     public Member create(@RequestBody Member member) {

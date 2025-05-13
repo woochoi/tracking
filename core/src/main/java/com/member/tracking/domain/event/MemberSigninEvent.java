@@ -3,6 +3,7 @@ package com.member.tracking.domain.event;
 import lombok.*;
 import org.springframework.data.annotation.TypeAlias;
 
+@ToString
 @Builder(builderMethodName = "mappingBuilder", builderClassName = "MappingBuilder", toBuilder = true)
 @EqualsAndHashCode(doNotUseGetters = true)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)

@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
 //@Profile("test")
 //@Slf4j
 //@RequiredArgsConstructor
-@Configuration
+//@Configuration
 public class LocalMongoConfig {
 
     @Value("${spring.data.mongodb.uri}")
