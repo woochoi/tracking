@@ -4,12 +4,12 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum SiteType {
-    G1("G1"),
-    G2("G2"),
-    G3("G3"),
     A1("A1"),
     A2("A2"),
-    A3("A3");
+    A3("A3"),
+    B1("B1"),
+    B2("B2"),
+    B3("B3");
 
     private final String code;
 
