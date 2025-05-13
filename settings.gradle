@@ -1,0 +1,5 @@
+rootProject.name = 'tracking'
+
+include 'api'
+include 'core'
+include 'consumer'
