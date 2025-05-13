@@ -80,7 +80,7 @@ public interface EventConsumerTestControllerSpec {
                "ipAddress": "192.111.11.11",
                "nation": "UNK",
                "continent": "UNK",
-               "url": "https://signinssl-dev.gmarket.co.kr:80/login/loginProc",
+               "url": "https://test.com/login",
                "result": "FAIL",
                "reason": "RESULT_NOT_FOUND",
                "siteType": "G1",
